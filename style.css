@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Adjust as needed */
+}
+
+.container {
+    background-color: #fff;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: min-content;
+}
+
+
+
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: min-content;
+    justify-content: space-between;
+
+}
+
+.input-box {
+    padding: 12px 16px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    width: 84% ;/* Adjust for button width */
+    text-transform: capitalize;
+    color: #000;
+    background-color: #e6f5fb;
+    border-radius: 14px;
+}
+.input-box::placeholder{
+    color: #000;
+}
+
+.search-button {
+    background-color: #e6f5fb; /* Green background */
+    color: black; /* White text */
+    padding: 10px;
+    font-size: 20px; /* Set a font size */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    border-radius: 50%; /* Rounded corners */
+    display: inline-flex; /* Align icon and text */
+    align-items: center; /* Vertically center align items */
+    justify-content: center; /* Center icon */
+    width: 46px; /* Fixed width to fit icon */
+    height: 46px;
+
+}
+
+.search-button i {
+    margin: 0; /* No margin needed since button width is fixed */
+}
+
+.search-button:hover {
+    background-color: #ababab; /* Darker green on hover */
+    color: #fff;
+}
+.weather-body{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 20px;
+}
+
+.weather-body img{
+width: 60%;
+}
+.weather-box{
+    margin-block: 20px;
+    text-align: center;
+}
+.weather-box .temperature{
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+}
+.weather-box .temperature sup{
+    font-size: 20px;
+    position: absolute;
+    font-weight: 600;
+}
+
+.weather-box .description{
+    font-size: 20px;
+    font-size: 700;
+    text-transform: capitalize;
+
+}
+
+.weather-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+
+.humidity , .wind{
+    display: flex;
+    align-items: center;
+}
+
+.humidity{
+    margin-left: 20px;
+}
+.wind{
+    margin-right: 20px;
+}
+.weather-details i{
+    font-size: 36px;
+}
+.weather-details .text{
+    margin-left: 10px;
+    font-size: 16px;
+}
+.text span{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.location-not-found{
+    margin-top: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.location-not-found img{
+    width: 80%
+}
+.location-not-found h1{
+    font-size: 20px;
+    color: #6b6b6b;
+    margin-block-end: 15px;
+}
